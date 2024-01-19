@@ -102,9 +102,13 @@ If the workdaround is not working, please gather theses informations and request
 
 ```mermaid
 flowchart TD
-A[Deploy to production] --> B{Is it Friday?};
-B -- Yes --> C[Do not deploy!];
-C ----> E[Enjoy your weekend!];
+A[Start : Request a KB] --> B[Search for KB];
+B[Search for KB] --> C{KB article exist?};
+C -- No --> D[Search for BUG];
+D[Search for BUG] --> E{is it a BUG?};
+E -- No --> F[Find same cases];
+F[Find same cases] --> G{Found at least 2 cases?};
+G -- Yes --> H[Request for KB];
 ```
 
 ## Implementation
