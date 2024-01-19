@@ -15,12 +15,18 @@ In this project, we are putting ourself in place of a customer care engineer, bu
 
 ## KB Template : 
 
-- [Symptoms](#Symptoms)
-- [Verifications](#Verifications)
+- [Symptoms](#####Symptoms)
+- [Verifications](#####Verifications)
+- [Identification](#####Identification)
+- [Solutions](#####Solutions)
 
-# Symptoms
+##### Symptoms
 
-# Verifications
+##### Verifications
+
+##### Identification
+
+##### Solutions
 
 
 Diagram of the process
