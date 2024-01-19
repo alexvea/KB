@@ -107,7 +107,11 @@ B -- Yes --> C[Do not deploy!];
 C ----> E[Enjoy your weekend!];
 ```
 
+## Implementation
 
+Google form + Form Approvals ? https://workspace.google.com/marketplace/app/form_approvals/835043066020
+Zendesk checkbox + google execel sheet ? 
+Zendesk form + approval workflow ? https://support.zendesk.com/hc/en-us/articles/4408832737818-Workflow-recipe-Creating-an-approval-process-between-departments
 
 ## More 
 
