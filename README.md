@@ -98,7 +98,7 @@ If the workdaround is not working, please gather theses informations and request
 ###### End of template
 ---
 
-## Diagram of the process
+## Diagram of the request KB process
 
 ```mermaid
 flowchart TD
@@ -109,6 +109,18 @@ D[Search for BUG] --> E{is it a BUG?};
 E -- No --> F[Find same cases];
 F[Find same cases] --> G{Found at least 2 cases?};
 G -- Yes --> H[Request for KB];
+```
+
+## Diagram of the identification and creation KB process
+
+```mermaid
+flowchart TD
+```
+
+## Diagram of the validation KB process
+
+```mermaid
+flowchart TD
 ```
 
 ## Implementation
