@@ -13,4 +13,25 @@ However due to this list of aspects, it is challenging to provide a solid KB sou
 
 In this project, we are putting ourself in place of a customer care engineer, but will need the help of leadtech customer care, technical success manager and developpers.
 
+## KB Template : 
+
+- [Symptoms](#Symptoms)
+- [Verifications](#Verifications)
+
+# Symptoms
+
+# Verifications
+
+
+Diagram of the process
+
+```mermaid
+flowchart TD
+A[Deploy to production] --> B{Is it Friday?};
+B -- Yes --> C[Do not deploy!];
+B -- No --> D[Run deploy.sh to deploy!];
+C ----> E[Enjoy your weekend!];
+D ----> E[Enjoy your weekend!];
+```
+
 
