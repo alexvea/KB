@@ -37,6 +37,7 @@ ie:
 
 ### Symptoms
 Includes a short description or a list of symptoms of the issue behavior, with screenshots if possible.
+![image](https://github.com/alexvea/KB/assets/35368807/e9bb5d54-fe76-41b3-9316-0186f87e74c7)
 
 ie:
 
