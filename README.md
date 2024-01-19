@@ -13,6 +13,17 @@ However due to this list of aspects, it is challenging to provide a solid KB sou
 
 In this project, we are putting ourself in place of a customer care engineer, but will need the help of leadtech customer care, technical success manager and developpers.
 
+Any information in these data sources can be used to create a KB:
+
+1)Zendesk solved cases:
+
+2)Slack channels:
+
+3)Confluence and Jira:
+
+4)External sources (google, official documentation, Stackoverflow)
+
+
 ## KB Template/example : 
 ---
 ###### Begin of template
