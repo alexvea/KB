@@ -110,3 +110,7 @@ D ----> E[Enjoy your weekend!];
 ```
 
 
+
+## More 
+
+For somes of the created KB articles, in case of the verification part consist only of sql request or linux commands, this script https://github.com/alexvea/diag can be helpfull to diagnose then provide directly the customer for a KB article link.
