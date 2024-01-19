@@ -82,7 +82,7 @@ ie :
 4. Go to the page (Configuration > Hosts > Discovery).
 5. Select the job and click on "force execution".
 
-If the workdaround is not working, please gather theses informations and request a support case on the Guard : support.centreon.com
+If the workdaround is not working, please gather theses informations and request a support case on the Guard : https://support.centreon.com
 
 ###### End of template
 ---
