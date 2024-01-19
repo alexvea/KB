@@ -13,23 +13,80 @@ However due to this list of aspects, it is challenging to provide a solid KB sou
 
 In this project, we are putting ourself in place of a customer care engineer, but will need the help of leadtech customer care, technical success manager and developpers.
 
-## KB Template : 
+## KB Template/example : 
+---
+###### Begin of template
 
-- [Symptoms](#####Symptoms)
-- [Verifications](#####Verifications)
-- [Identification](#####Identification)
-- [Solutions](#####Solutions)
+- [Informations](###Informations)
+- [Symptoms](###Symptoms)
+- [Verifications](###Verifications)
+- [Identification](###Identification)
+- [Solutions](###Solutions)
 
-##### Symptoms
+### Informations
+Includes informations about the concerned OS, platform, packages or extensions versions.
 
-##### Verifications
+ie: 
+|         |      |      
+| ------------- |:-------------:                |
+| OS            | Debian 11 only                |
+| platform      | Central with deported DB      |
+| Extension     | Autodiscovery                 |
+| Version       | 22.10                         |
+| Package       | centreon-auto-discovery-server-22.10.4                         |
 
-##### Identification
+### Symptoms
+Includes a short description or a list of symptoms of the issue behavior, with screenshots if possible.
 
-##### Solutions
+ie:
 
+Host discovery will not execute when clicking on "force execution button".
+- popup with error message.
+- on webbrowser dev tools : error 500 autodiscovery endpoint.
 
-Diagram of the process
+### Verifications
+Includes a list of configuration, service, release notes or documentations link verifications, with screenshot if possible.
+
+ie:
+
+- Please make sure that autodiscovery job is properly with this link : https://docs.centreon.com/docs/22.10/monitoring/discovery/hosts-discovery/#job-discovery-wizard
+- Verify that gorgoned service is active on your Central server with this command : 
+```
+hostname; systemctl status gorgoned -l
+```
+
+### Identification
+Includes a list of logs files, sql requests result that will confirm it is the concerned issue.
+
+ie :
+
+1. Check for error in the logs file gorgoned.log :
+```
+grep "ERROR - \[autodiscovery\]"  /var/log/centreon-gorgone/gorgoned.log
+```
+expected result :
+```
+2024-01-17 14:16:55 - ERROR - [autodiscovery] -class- host discovery - cannot get host discovery jobs - request error [code: '500']
+```
+
+2. Check that the user and password are correct in the /etc/centreon-gorgone/config.d/31-centreon-api.yaml file.
+
+### Solutions
+Includes the list of actions required to solve this issue, with screenshot if possible. 
+
+ie : 
+1. Connect with local admin.
+2. Go to the page (Administration > Extensions > Manager).
+3. Reinstall the extension "Auto Discovery" :warning: do not remove the extension.
+4. Go to the page (Configuration > Hosts > Discovery).
+5. Select the job and click on "force execution".
+
+If the workdaround is not working, please gather theses informations and request a support case on the Guard : support.centreon.com
+
+###### End of template
+---
+
+## Diagram of the process
 
 ```mermaid
 flowchart TD
