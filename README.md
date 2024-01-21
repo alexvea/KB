@@ -203,8 +203,11 @@ I[Publish KB article] --> J[End : KB validation];
 
 ## Implementation :
 
+TODO
 Google form + Form Approvals ? https://workspace.google.com/marketplace/app/form_approvals/835043066020
-Zendesk checkbox + google execel sheet ? 
+
+Zendesk checkbox + google excel sheet ? 
+
 Zendesk form + approval workflow ? https://support.zendesk.com/hc/en-us/articles/4408832737818-Workflow-recipe-Creating-an-approval-process-between-departments
 
 ## More :
