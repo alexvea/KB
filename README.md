@@ -131,15 +131,15 @@ If the workdaround is not working, please gather theses informations and request
 
 ```mermaid
 flowchart TD
-A[Start : new KB] --> B[Process : Request a KB];
-B[Process : Request a KB] --> C[Process : KB creation];
-C[Process : KB creation] --> D[Process : KB validation];
+A[Start : new KB] -- CC Engineer --> B[Process : Request a KB];
+B[Process : Request a KB] -- CC Engineer/Leadtech --> C[Process : KB creation];
+C[Process : KB creation] -- TSM/Developpers --> D[Process : KB validation];
 D[Process : KB validation] --> E[End : new KB];
 ```
 
 ## Diagram of the request KB process :
 
-Used by CC engineers.
+Used by CC Engineers.
 ```mermaid
 flowchart TD
 A[Start : Request a KB] --> B[Search for KB];
