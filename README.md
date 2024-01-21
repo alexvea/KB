@@ -137,13 +137,21 @@ C -- No --> D[Search for BUG];
 D[Search for BUG] --> E{is it a BUG?};
 E -- No --> F[Find same cases];
 F[Find same cases] --> G{Found at least 2 cases?};
-G -- Yes --> H[Request for KB];
+G -- Yes --> H[End : Request for KB];
 ```
 
 ## Diagram of the identification and creation KB process
 
 ```mermaid
 flowchart TD
+A[Start : KB creation] --> B[Identify KB type];
+B[Identify KB type] --> C[Use KB template];
+C[Use KB template] --> D[Identify platform informations];
+D[Identify platform informations] --> E[Identify Symptons];
+E[Identify Symptons] --> F[Identify Verification];
+F[Identify Verifications] --> G[Identify Identifications];
+G[Identify Identifications] --> H[identify Solutions];
+
 ```
 
 ## Diagram of the validation KB process
