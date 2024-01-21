@@ -127,7 +127,9 @@ If the workdaround is not working, please gather theses informations and request
 ###### End of template
 ---
 
-## Diagram of the request KB process
+## Diagram of the request KB process :
+
+Used by CC engineers.
 
 ```mermaid
 flowchart TD
@@ -140,7 +142,9 @@ F[Find same cases] --> G{Found at least 2 cases?};
 G -- Yes --> H[End : Request for KB];
 ```
 
-## Diagram of the identification and creation KB process
+## Diagram of the identification and creation KB process : 
+
+Used by CC engineers or Leadtech.
 
 ```mermaid
 flowchart TD
@@ -154,10 +158,22 @@ G[Identify Identifications] --> H[identify Solutions];
 H[Save the KB article] --> I[End : KB creation];
 ```
 
-## Diagram of the validation KB process
+## Diagram of the validation KB process : 
+
+Used by CC engineers or Leadtech.
 
 ```mermaid
 flowchart TD
+A[Start : KB validation] --> B[Read the saved KB article];
+B[Read the saved KB article] --> C[Verify the KB];
+C[Verify the KB] --> D{Is it correct?};
+D --> Yes --> E{Is it a new BUG?};
+D --> No --> F[Correct the KB];
+F[Correct the KB] --> G{Is it a new BUG?}
+G --> Yes --> H[Create a JIRA];
+G --> No --> I[Identify the KB type];
+H[Create a JIRA] --> I[Identify the KB type];
+I[Identify the KB type] --> J[Publish the KB article];
 ```
 
 ## Implementation
