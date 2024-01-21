@@ -151,7 +151,7 @@ D[Identify platform informations] --> E[Identify Symptons];
 E[Identify Symptons] --> F[Identify Verification];
 F[Identify Verifications] --> G[Identify Identifications];
 G[Identify Identifications] --> H[identify Solutions];
-
+H[Save the KB article] --> I[End : KB creation];
 ```
 
 ## Diagram of the validation KB process
