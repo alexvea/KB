@@ -127,10 +127,19 @@ If the workdaround is not working, please gather theses informations and request
 ###### End of template
 ---
 
+## Global diagram : 
+
+```mermaid
+flowchart TD
+A[Start : new KB] --> B[Process : Request a KB];
+B[Process : Request a KB] --> C[Process : KB creation];
+C[Process : KB creation] --> D[Process : KB validation];
+D[Process : KB validation] --> E[End : new KB];
+```
+
 ## Diagram of the request KB process :
 
 Used by CC engineers.
-
 ```mermaid
 flowchart TD
 A[Start : Request a KB] --> B[Search for KB];
@@ -146,7 +155,6 @@ H[Fill the Form] --> I[End : Request for KB];
 ## Diagram of the identification and creation KB process : 
 
 Used by CC engineers or Leadtech.
-
 ```mermaid
 flowchart TD
 A[Start : KB creation] --> B[Identify KB type];
@@ -162,7 +170,6 @@ H[Save the KB article] --> I[End : KB creation];
 ## Diagram of the validation KB process : 
 
 Used by TSM or developpers.
-
 ```mermaid
 flowchart TD
 A[Start : KB validation] --> B[Read saved KB article];
@@ -176,16 +183,6 @@ E -- No --> H[Identify KB type];
 G --> H[Identify KB type];
 H[Identify KB type] --> I[Publish KB article];
 I[Publish KB article] --> J[End : KB validation];
-```
-
-## Global diagram : 
-
-```mermaid
-flowchart TD
-A[Start : new KB] --> B[Process : Request a KB];
-B[Process : Request a KB] --> C[Process : KB creation];
-C[Process : KB creation] --> D[Process : KB validation];
-D[Process : KB validation] --> E[End : new KB];
 ```
 
 ## Implementation
