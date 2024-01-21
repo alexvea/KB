@@ -2,8 +2,12 @@
 
 ## Summary :
 1)[Presentation](##Presentation)
+2)[Datasources](##Datasources)
+3)[KB Template/example](##KBTemplate/example)
+4)[Diagrams](##Diagrams)
+5)[Implementation](##Implementation)
 
-## Presentation
+## Presentation :
 This projet will help to implement a Knowledge base article request, identification, creation and validation.
 
 In a customer care support context and point of view, a Knowledge base can play an important role to help the customer to solve his technical issues by himself or help the team to provide with proper technical solutions.
@@ -130,7 +134,9 @@ If the workdaround is not working, please gather theses informations and request
 ###### End of template
 ---
 
-## Global diagram : 
+## Diagrams :
+
+### Global diagram : 
 
 ```mermaid
 flowchart TD
@@ -140,7 +146,7 @@ C[Process : KB creation] -- TSM/Developpers --> D[Process : KB validation];
 D[Process : KB validation] --> E[End : new KB];
 ```
 
-## Diagram of the request KB process :
+### Diagram of the request KB process :
 
 Used by CC Engineers.
 ```mermaid
@@ -155,7 +161,7 @@ G -- Yes --> H[Fill the Form];
 H[Fill the Form] --> I[End : Request for KB];
 ```
 
-## Diagram of the identification and creation KB process : 
+### Diagram of the identification and creation KB process : 
 
 Used by CC engineers or Leadtech.
 ```mermaid
@@ -170,7 +176,7 @@ G[Identify Identifications] --> H[identify Solutions];
 H[Save KB article in form] --> I[End : KB creation];
 ```
 
-## Diagram of the validation KB process : 
+### Diagram of the validation KB process : 
 
 Used by TSM or developpers.
 ```mermaid
@@ -188,7 +194,7 @@ H[Identify KB type] --> I[Publish KB article];
 I[Publish KB article] --> J[End : KB validation];
 ```
 
-## Implementation
+## Implementation :
 
 Google form + Form Approvals ? https://workspace.google.com/marketplace/app/form_approvals/835043066020
 Zendesk checkbox + google execel sheet ? 
