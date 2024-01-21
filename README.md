@@ -16,15 +16,19 @@ In this project, we are putting ourself in place of a customer care engineer, bu
 Any information in these data sources can be used to create a KB:
 
 1)Zendesk solved cases:
+
 Old solved cases from our current current ticketing system is an important source of data.
-
 As customer care engineer we try to provide simple steps procedure to help the customer issues.
-
 It is very common to solve a new case with what already exist in zendesk old cases.
 
-<u>advices :</u>
+**advices :**
+It is a good practive to add a summary of the case (description, diagnostics, solution), to help others engineers to understand the case without having to read all the exchanges.
 
 2)Slack channels:
+The data source can be used to ask general questions to get confirmation of a functionnality, or start a topic about a potential bug detection.
+We have channels for every functionnalities to be able to get in touch with the proper developpers.
+However, we currently use the free version of Slack, preventing us to access to more than 90 days of chat history. [source](https://slack.com/intl/fr-fr/help/articles/115002422943-Limites-d%E2%80%99utilisation-des-espaces-de-travail-gratuits) 
+But with the help of this Zendesk 
 
 3)Confluence and Jira:
 
