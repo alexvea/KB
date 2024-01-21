@@ -169,10 +169,10 @@ B[Read the saved KB article] --> C[Verify the KB];
 C[Verify the KB] --> D{Is it correct?};
 D --> Yes --> E{Is it a new BUG?};
 D --> No --> F[Correct the KB];
-F[Correct the KB] --> G{Is it a new BUG?}
+F --> E{Is it a new BUG?}
 G --> Yes --> H[Create a JIRA];
 G --> No --> I[Identify the KB type];
-H[Create a JIRA] --> I[Identify the KB type];
+H --> I[Identify the KB type];
 I[Identify the KB type] --> J[Publish the KB article];
 ```
 
