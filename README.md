@@ -13,6 +13,7 @@ However due to this list of aspects, it is challenging to provide a solid KB sou
 
 In this project, we are putting ourself in place of a customer care engineer, but will need the help of leadtech customer care, technical success manager and developpers.
 
+## Datasources : 
 Any information in these data sources can be used to create a KB:
 
 1)Zendesk solved cases:
@@ -25,14 +26,28 @@ It is very common to solve a new case with what already exist in zendesk old cas
 It is a good practive to add a summary of the case (description, diagnostics, solution), to help others engineers to understand the case without having to read all the exchanges.
 
 2)Slack channels:
+
 The data source can be used to ask general questions to get confirmation of a functionnality, or start a topic about a potential bug detection.
-We have channels for every functionnalities to be able to get in touch with the proper developpers.
+We have channels for every functionnalities to be able to get in touch with the proper experts/developpers.
+
 However, we currently use the free version of Slack, preventing us to access to more than 90 days of chat history. [source](https://slack.com/intl/fr-fr/help/articles/115002422943-Limites-d%E2%80%99utilisation-des-espaces-de-travail-gratuits) 
-But with the help of this Zendesk 
+But with the help of this Zendesk [app](https://www.zendesk.com/marketplace/apps/support/972305/slack/), we are able to keep the chat history in Zendesk side conversation functionnality.
+
+**advices :**
+After asking any questions, it's always a good practice to give a feedback if the answer/solution was helpfull.
 
 3)Confluence and Jira:
 
-4)External sources (google, official documentation, Stackoverflow)
+Theses tools are mostly used for internal purpose by R&D and the CC Team.
+In our Confluence [link](https://centreon.atlassian.net/wiki/spaces/PSD/pages/83690927/Customer+Care), we can find usefull informations like tools, processes or technical documentation. Actually as CC engineer, we can create topics to share some tips and tricks. We can call them internal KB articles.
+
+In Jira, it includes BUG reports, QA processes, etc. In some of the BUG reports, it can contain workaround fix/solution provided by the CC engineers, the TSM or the developpers.
+
+4)The Guard :
+
+The website is the Customer care platform used by our supported customers to create new case 
+
+5)External sources (google, official documentation, Stackoverflow)
 
 
 ## KB Template/example : 
