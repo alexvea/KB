@@ -164,16 +164,16 @@ Used by CC engineers or Leadtech.
 
 ```mermaid
 flowchart TD
-A[Start : KB validation] --> B[Read the saved KB article];
-B[Read the saved KB article] --> C[Verify the KB];
-C[Verify the KB] --> D{Is it correct?};
+A[Start : KB validation] --> B[Read saved KB article];
+B[Read saved KB article] --> C[Verify KB article];
+C[Verify KB article] --> D{Is it correct?};
 D -- Yes --> E{Is it a new BUG?};
-D -- No --> F[Modify the KB];
+D -- No --> F[Modify KB article];
 F --> E{Is it a new BUG?}
 E -- Yes --> H[Create a JIRA];
-E -- No --> I[Identify the KB type];
-H --> I[Identify the KB type];
-I[Identify the KB type] --> J[Publish the KB article];
+E -- No --> I[Identify KB type];
+H --> I[Identify KB type];
+I[Identify KB type] --> J[Publish KB article];
 ```
 
 ## Implementation
