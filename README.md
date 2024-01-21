@@ -39,15 +39,18 @@ After asking any questions, it's always a good practice to give a feedback if th
 3)Confluence and Jira:
 
 Theses tools are mostly used for internal purpose by R&D and the CC Team.
-In our Confluence [link](https://centreon.atlassian.net/wiki/spaces/PSD/pages/83690927/Customer+Care), we can find usefull informations like tools, processes or technical documentation. Actually as CC engineer, we can create topics to share some tips and tricks. We can call them internal KB articles.
+In our Confluence [link](https://centreon.atlassian.net/wiki/spaces/PSD/pages/83690927/Customer+Care), we can find usefull informations like tools, processes or technical documentation. Actually as CC engineer, we can create topics to share some tips and tricks. We can call them <em>internal KB articles</em>.
 
-In Jira, it includes BUG reports, QA processes, etc. In some of the BUG reports, it can contain workaround fix/solution provided by the CC engineers, the TSM or the developpers.
+In Jira, it includes BUG reports, QA processes, etc. In some of the BUG reports, it can contain <em>workaround fix/solution</em> provided by the CC engineers, the TSM or the developpers.
 
 4)The Guard :
 
-The website is the Customer care platform used by our supported customers to create new case 
+The website is the Customer care platform used by our supported customers to create new case. And it also includes KB articles mostly wrote by Leadtech, developpers or product owners. It is an important data source if supplied to avoid the customer to create new cases. We can call them <em>public KB articles</em>.
 
-5)External sources (google, official documentation, Stackoverflow)
+5)External sources (google, official documentation, Stackoverflow) :
+
+As a CC engineer, it's not rare that we use external documentation to help to solve a customer case. We always try our best to provide a reliable informations.
+We can call them <em>external KB articles</em>.
 
 
 ## KB Template/example : 
