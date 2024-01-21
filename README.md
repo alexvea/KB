@@ -139,7 +139,8 @@ C -- No --> D[Search for BUG];
 D[Search for BUG] --> E{is it a BUG?};
 E -- No --> F[Find same cases];
 F[Find same cases] --> G{Found at least 2 cases?};
-G -- Yes --> H[End : Request for KB];
+G -- Yes --> H[Fill the Form];
+H[Fill the Form] --> I[End : Request for KB];
 ```
 
 ## Diagram of the identification and creation KB process : 
@@ -160,7 +161,7 @@ H[Save the KB article] --> I[End : KB creation];
 
 ## Diagram of the validation KB process : 
 
-Used by CC engineers or Leadtech.
+Used by TSM or developpers.
 
 ```mermaid
 flowchart TD
@@ -170,10 +171,21 @@ C[Verify KB article] --> D{Is it correct?};
 D -- Yes --> E{Is it a new BUG?};
 D -- No --> F[Modify KB article];
 F --> E{Is it a new BUG?}
-E -- Yes --> H[Create a JIRA];
-E -- No --> I[Identify KB type];
-H --> I[Identify KB type];
-I[Identify KB type] --> J[Publish KB article];
+E -- Yes --> G[Create a JIRA];
+E -- No --> H[Identify KB type];
+G --> H[Identify KB type];
+H[Identify KB type] --> I[Publish KB article];
+I[Publish KB article] --> J[End : KB validation];
+```
+
+## Global diagram : 
+
+```mermaid
+flowchart TD
+A[Start : new KB] --> B[Process : Request a KB];
+B[Process : Request a KB] --> C[Process : KB creation];
+C[Process : KB creation] --> D[Process : KB validation];
+D[Process : KB validation] --> E[End : new KB];
 ```
 
 ## Implementation
