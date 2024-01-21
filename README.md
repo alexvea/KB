@@ -91,9 +91,9 @@ ie:
 
 ### Symptoms
 Includes a short description or a list of symptoms of the issue behavior, with screenshots if possible.
-![image](https://github.com/alexvea/KB/assets/35368807/e9bb5d54-fe76-41b3-9316-0186f87e74c7)
 
-ie:
+ie :
+![image](https://github.com/alexvea/KB/assets/35368807/e9bb5d54-fe76-41b3-9316-0186f87e74c7)
 
 Host discovery will not execute when clicking on "force execution button".
 - popup with error message.
@@ -136,7 +136,7 @@ ie :
 4. Go to the page (Configuration > Hosts > Discovery).
 5. Select the job and click on "force execution".
 
-If the workdaround is not working, please gather theses informations and request a support case on the Guard : https://support.centreon.com
+If the workaround is not working, please gather theses informations and request a support case on the Guard : https://support.centreon.com
 
 ###### End of template
 ---
