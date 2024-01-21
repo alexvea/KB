@@ -164,7 +164,7 @@ D[Identify platform informations] --> E[Identify Symptons];
 E[Identify Symptons] --> F[Identify Verification];
 F[Identify Verifications] --> G[Identify Identifications];
 G[Identify Identifications] --> H[identify Solutions];
-H[Save the KB article] --> I[End : KB creation];
+H[Save KB article in form] --> I[End : KB creation];
 ```
 
 ## Diagram of the validation KB process : 
@@ -172,8 +172,8 @@ H[Save the KB article] --> I[End : KB creation];
 Used by TSM or developpers.
 ```mermaid
 flowchart TD
-A[Start : KB validation] --> B[Read saved KB article];
-B[Read saved KB article] --> C[Verify KB article];
+A[Start : KB validation] --> B[Read saved KB article in form];
+B[Read saved KB article in form] --> C[Verify KB article];
 C[Verify KB article] --> D{Is it correct?};
 D -- Yes --> E{Is it a new BUG?};
 D -- No --> F[Modify KB article];
