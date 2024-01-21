@@ -168,7 +168,7 @@ A[Start : KB validation] --> B[Read the saved KB article];
 B[Read the saved KB article] --> C[Verify the KB];
 C[Verify the KB] --> D{Is it correct?};
 D -- Yes --> E{Is it a new BUG?};
-D -- No --> F[Correct the KB];
+D -- No --> F[Modify the KB];
 F --> E{Is it a new BUG?}
 E -- Yes --> H[Create a JIRA];
 E -- No --> I[Identify the KB type];
