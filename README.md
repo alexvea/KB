@@ -153,11 +153,9 @@ C[Process : KB creation] -- TSM/Developpers --> D[Process : KB validation];
 D[Process : KB validation] --> E[End : new KB];
 ```
 
-### Diagram of the request KB process :
-
-Used by CC Engineers.
-```mermaid
-flowchart TD
+<table>
+  <tr>
+    <td>Diagram of the request KB process : <pre lang="mermaid"><code>flowchart TD
 A[Start : Request a KB] --> B[Search for KB];
 B[Search for KB] --> C{KB article exist?};
 C -- No --> D[Search for BUG];
@@ -166,13 +164,8 @@ E -- No --> F[Find same cases];
 F[Find same cases] --> G{Found at least 2 cases?};
 G -- Yes --> H[Fill the Form];
 H[Fill the Form] --> I[End : Request for KB];
-```
-
-### Diagram of the identification and creation KB process : 
-
-Used by CC engineers or Leadtech.
-```mermaid
-flowchart TD
+    </code></pre></td>
+    <td>Diagram of the identification and creation KB process<pre lang="mermaid"><code>flowchart TD
 A[Start : KB creation] --> B[Identify KB type];
 B[Identify KB type] --> C[Use KB template];
 C[Use KB template] --> D[Identify platform informations];
@@ -181,13 +174,8 @@ E[Identify Symptons] --> F[Identify Verification];
 F[Identify Verifications] --> G[Identify Identifications];
 G[Identify Identifications] --> H[identify Solutions];
 H[Save KB article in form] --> I[End : KB creation];
-```
-
-### Diagram of the validation KB process : 
-
-Used by TSM or developpers.
-```mermaid
-flowchart TD
+    </code></td>
+    <td>Diagram of the validation KB process<pre lang="mermaid"><code>flowchart TD
 A[Start : KB validation] --> B[Read saved KB article in form];
 B[Read saved KB article in form] --> C[Verify KB article];
 C[Verify KB article] --> D{Is it correct?};
@@ -199,7 +187,10 @@ E -- No --> H[Identify KB type];
 G --> H[Identify KB type];
 H[Identify KB type] --> I[Publish KB article];
 I[Publish KB article] --> J[End : KB validation];
-```
+    </code></td>
+  </tr>
+</table>
+
 
 ## Implementation :
 
