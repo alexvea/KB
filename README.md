@@ -32,12 +32,12 @@ Any information in these data sources can be used to create a KB:
 
 1)Zendesk solved cases:
 
-Old solved cases from our current current ticketing system is an important source of data.
+Old solved cases from our current ticketing system is an important source of data.
 As customer care engineer we try to provide simple steps procedure to help the customer issues.
 It is very common to solve a new case with what already exist in zendesk old cases.
 
 **advices :**
-It is a good practive to add a summary of the case (description, diagnostics, solution), to help others engineers to understand the case without having to read all the exchanges.
+It is a good practice to add a summary of the case (description, diagnostic, solution) at the end of the solved case, to help others engineers to understand the case without having to read all the exchanges.
 
 2)Slack channels:
 
