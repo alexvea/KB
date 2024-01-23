@@ -161,7 +161,7 @@ B[Search for KB] --> C{KB article exist?};
 C -- No --> D[Search for BUG];
 D[Search for BUG] --> E{is it a BUG?};
 E -- No --> F[Find same cases];
-F[Find same cases(with the help of "needed KB" in zendesk case] --> G{Found at least 2 cases?};
+F[Find same cases] --> G{Found at least 2 cases?};
 G -- Yes --> H[Fill the Form];
 H[Fill the Form] --> I[End : Request for KB];
     </code></pre></td>
@@ -204,5 +204,5 @@ Zendesk checkbox + google excel sheet ?
 Zendesk form + approval workflow ? https://support.zendesk.com/hc/en-us/articles/4408832737818-Workflow-recipe-Creating-an-approval-process-between-departments
 
 ## More :
-
+TODO : "chapitre dans KB dont certains non visible par le client"
 For somes of the created KB articles, in case of the verification part consist only of sql request or linux commands, this script https://github.com/alexvea/diag can be helpfull to diagnose then provide directly the customer for a KB article link.
