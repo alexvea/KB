@@ -172,8 +172,9 @@ C[Use KB template] --> D[Identify platform informations];
 D[Identify platform informations] --> E[Identify Symptons];
 E[Identify Symptons] --> F[Identify Verification];
 F[Identify Verifications] --> G[Identify Identifications];
-G[Identify Identifications] --> H[identify Solutions];
-H[Save KB article in form] --> I[End : KB creation];
+G[Identify Identifications] --> H[Identify Solutions];
+H[Identify Solutions] --> I[identify Solutions];      
+I[Save KB article in form] --> J[End : KB creation];
     </code></td>
     <td>Diagram of the validation KB process<pre lang="mermaid"><code>flowchart TD
 A[Start : KB validation] --> B[Read saved KB article in form];
