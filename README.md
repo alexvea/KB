@@ -161,7 +161,7 @@ B[Search for KB] --> C{KB article exist?};
 C -- No --> D[Search for BUG];
 D[Search for BUG] --> E{is it a BUG?};
 E -- No --> F[Find same cases];
-F[Find same cases] --> G{Found at least 2 cases?};
+F[Find same cases(with the help of "needed KB" in zendesk case] --> G{Found at least 2 cases?};
 G -- Yes --> H[Fill the Form];
 H[Fill the Form] --> I[End : Request for KB];
     </code></pre></td>
