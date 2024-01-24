@@ -146,7 +146,7 @@ If the workaround is not working, please gather theses informations and request 
 ### Global diagram : 
 
 ```mermaid
-flowchart TD
+flowchart LR
 A[Start : new KB] -- CC Engineer --> B[Process : Request a KB];
 B[Process : Request a KB] -- CC Engineer/Leadtech --> C[Process : KB creation];
 C[Process : KB creation] -- TSM/Developpers --> D[Process : KB validation];
